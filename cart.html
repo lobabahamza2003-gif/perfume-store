@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر العطور الفاخرة</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div><a href="#"><img src="img/logo.png" class="logo" alt="شعار المتجر"></a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="shop.html">المتجر</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+        <li><a class="active" href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+      </ul>
+    </nav>
+     <div class="search-container">
+  <input type="text" id="search-input" placeholder="ابحث عن عطر...">
+  <button id="search-button">بحث</button>
+  <button id="reset-button" style="display: none;">عرض الكل</button>
+</div>
+
+  </header>
+
+  <main>
+   <section id="page-header" class="cart-header">
+  <h2>#عربة التسوق</h2>
+  <p>راجع منتجاتك قبل إتمام الطلب</p>
+</section>
+
+
+    <section id="cart" class="main">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>حذف</td>
+            <td>الصورة</td>
+            <td>المنتج</td>
+            <td>السعر</td>
+            <td>الكمية</td>
+            <td>الإجمالي</td>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+  <td><a href="#" class="remove-item"><i class="fas fa-times-circle"></i></a></td>
+
+  <td><img src="img/photo_6.jpg" alt="عطر 1"></td>
+  <td>Aquatic Ozonic</td>
+  <td class="price">$30</td>
+  <td><input type="number" class="quantity" value="1" min="1"></td>
+  <td class="total">$30</td>
+</tr>
+<tr>
+  <td><a href="#" class="remove-item"><i class="fas fa-times-circle"></i></a></td>
+
+  <td><img src="img/photo_9.jpg" alt="Armani Code"></td>
+  <td>Armani Code</td>
+  <td class="price">$44</td>
+  <td><input type="number" class="quantity" value="1" min="1"></td>
+  <td class="total">$44.00</td>
+</tr>
+
+         <tr>
+ <td><a href="#" class="remove-item"><i class="fas fa-times-circle"></i></a></td>
+
+  <td><img src="img/photo_11.jpg" alt="Yves Saint Laurent"></td>
+  <td>Yves Saint Laurent</td>
+  <td class="price">$50</td>
+  <td><input type="number" class="quantity" value="1" min="1"></td>
+  <td class="total">$50.00</td>
+</tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-add" class="main">
+      <div id="coupon">
+  <h3>تطبيق كود الخصم</h3>
+  <div>
+    <input type="text" id="discount-code" placeholder="أدخل كود الخصم">
+    <button  id="apply-discount">تطبيق</button>
+  </div>
+  <p id="discount-message" style="color: green; margin-top: 10px;"></p>
+</div>
+
+<div id="Subtotal">
+  <h3>ملخص العربة</h3>
+  <table>
+    <tr>
+      <td>الإجمالي الفرعي</td>
+      <td id="subtotal-amount">$0.00</td>
+    </tr>
+    <tr>
+      <td>الخصم</td>
+      <td id="discount-amount">$0.00</td>
+    </tr>
+    <tr>
+      <td>الشحن</td>
+      <td>مجاني</td>
+    </tr>
+    <tr>
+      <td><strong>الإجمالي الكلي</strong></td>
+      <td><strong id="grand-total">$0.00</strong></td>
+    </tr>
+  </table>
+  <button  id="checkout-btn">متابعة إلى الدفع</button>
+</div>
+
+
+    </section>
+  </main>
+
+  <footer class="main">
+    <div class="col">
+      <img class="logo" src="img/logo.png" alt="شعار المتجر">
+      <h4>تواصل معنا</h4>
+      <p><strong>العنوان:</strong>دمشق، شارع الحمرا، بناء رقم 12</p>
+      <p><strong>الهاتف:</strong> الهاتف: +963 11 6314731</p>
+      <p><strong>ساعات العمل:</strong> 10:00 - 18:00، من الإثنين إلى السبت</p>
+      <div class="follow">
+        <h4>تابعنا</h4>
+        <div class="icon">
+          <a href="https://www.facebook.com" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="إنستغرام"><i class="fab fa-instagram"></i></a>
+          <a href="https://telegram.org" target="_blank" title="تلغرام"><i class="fab fa-telegram-plane"></i></a>
+          <a href="https://www.youtube.com" target="_blank" title="يوتيوب"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.pinterest.com" target="_blank" title="بينتريست"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>حول المتجر</h4>
+      <a href="#">من نحن</a>
+      <a href="#">معلومات التوصيل</a>
+      <a href="#">سياسة الخصوصية</a>
+      <a href="#">الشروط والأحكام</a>
+      <a href="#">اتصل بنا</a>
+    </div>
+
+    <div class="col">
+      <h4>حسابي</h4>
+      <a href="#">تسجيل الدخول</a>
+      <a href="#">عرض العربة</a>
+      <a href="#">قائمة الرغبات</a>
+      <a href="#">تتبع طلبي</a>
+      <a href="#">مساعدة</a>
+    </div>
+<div class="col install">
+  <h4>حمّل التطبيق</h4>
+  <p>من متجر التطبيقات أو Google Play</p>
+  <div class="app-buttons">
+    <a href="https://apps.apple.com/app/id375380948" target="_blank">
+      <img src="img/pay/app.jpg" alt="App Store">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps" target="_blank">
+      <img src="img/pay/play.jpg" alt="Google Play">
+    </a>
+  </div>
+  <p>بوابات دفع آمنة</p>
+  <img src="img/pay/pay.png" alt="طرق الدفع">
+</div>
+
+
+    <div class="copyright">
+    <p>© 2025، lobaba للعطور - قالب HTML و CSS</p>
+    </div>
+  </footer>
+<script>
+  function updateTotals() {
+    const rows = document.querySelectorAll("#cart tbody tr");
+
+    rows.forEach(row => {
+      const priceCell = row.querySelector(".price");
+      const quantityInput = row.querySelector(".quantity");
+      const totalCell = row.querySelector(".total");
+
+      const price = parseFloat(priceCell.textContent.replace("$", ""));
+      const quantity = parseInt(quantityInput.value);
+      const total = price * quantity;
+
+      totalCell.textContent = `$${total.toFixed(2)}`;
+    });
+  }
+
+  // تحديث عند تغيير الكمية
+  document.querySelectorAll(".quantity").forEach(input => {
+    input.addEventListener("input", updateTotals);
+  });
+
+  // تحديث عند تحميل الصفحة
+  window.addEventListener("load", updateTotals);
+</script>
+
+<script>
+  function updateTotals() {
+    const rows = document.querySelectorAll("#cart tbody tr");
+    let subtotal = 0;
+
+    rows.forEach(row => {
+      const priceCell = row.querySelector(".price");
+      const quantityInput = row.querySelector(".quantity");
+      const totalCell = row.querySelector(".total");
+
+      const price = parseFloat(priceCell.textContent.replace("$", ""));
+      const quantity = parseInt(quantityInput.value);
+      const total = price * quantity;
+
+      totalCell.textContent = `$${total.toFixed(2)}`;
+      subtotal += total;
+    });
+
+    // تحديث الإجمالي الفرعي والإجمالي الكلي
+    document.getElementById("subtotal-amount").textContent = `$${subtotal.toFixed(2)}`;
+    document.getElementById("grand-total").textContent = `$${subtotal.toFixed(2)}`;
+  }
+
+  // تحديث عند تغيير الكمية
+  document.querySelectorAll(".quantity").forEach(input => {
+    input.addEventListener("input", updateTotals);
+  });
+
+  // تحديث عند تحميل الصفحة
+  window.addEventListener("load", updateTotals);
+</script>
+
+<script>
+  let discountValue = 0;
+
+  function updateTotals() {
+    const rows = document.querySelectorAll("#cart tbody tr");
+    let subtotal = 0;
+
+    rows.forEach(row => {
+      const priceCell = row.querySelector(".price");
+      const quantityInput = row.querySelector(".quantity");
+      const totalCell = row.querySelector(".total");
+
+      const price = parseFloat(priceCell.textContent.replace("$", ""));
+      const quantity = parseInt(quantityInput.value);
+      const total = price * quantity;
+
+      totalCell.textContent = `$${total.toFixed(2)}`;
+      subtotal += total;
+    });
+
+    const discountAmount = subtotal * discountValue;
+    const grandTotal = subtotal - discountAmount;
+
+    document.getElementById("subtotal-amount").textContent = `$${subtotal.toFixed(2)}`;
+    document.getElementById("discount-amount").textContent = `-$${discountAmount.toFixed(2)}`;
+    document.getElementById("grand-total").textContent = `$${grandTotal.toFixed(2)}`;
+  }
+
+  // تحديث عند تغيير الكمية
+  document.querySelectorAll(".quantity").forEach(input => {
+    input.addEventListener("input", updateTotals);
+  });
+
+  // تطبيق كود الخصم
+  document.getElementById("apply-discount").addEventListener("click", () => {
+    const code = document.getElementById("discount-code").value.trim().toLowerCase();
+    const message = document.getElementById("discount-message");
+
+    if (code === "lobaba10") {
+      discountValue = 0.10;
+      message.textContent = "تم تطبيق خصم 10٪ بنجاح!";
+      message.style.color = "green";
+    } else if (code === "lobaba20") {
+      discountValue = 0.20;
+      message.textContent = "تم تطبيق خصم 20٪ بنجاح!";
+      message.style.color = "green";
+    } else {
+      discountValue = 0;
+      message.textContent = "كود الخصم غير صالح.";
+      message.style.color = "red";
+    }
+
+    updateTotals();
+  });
+
+  // زر الدفع
+  document.getElementById("checkout-btn").addEventListener("click", () => {
+    window.location.href = "checkout.html"; // غيّر الرابط حسب صفحة الدفع
+  });
+
+  // تحديث عند تحميل الصفحة
+  window.addEventListener("load", updateTotals);
+</script>
+
+<script>
+  // حذف الصف عند الضغط على زر الحذف
+  document.querySelectorAll(".remove-item").forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault(); // منع الانتقال للرابط
+      const row = this.closest("tr");
+      row.remove();
+      updateTotals(); // إعادة حساب الإجمالي بعد الحذف
+    });
+  });
+</script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

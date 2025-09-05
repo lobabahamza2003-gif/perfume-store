@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تأكيد الطلب</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    #checkout {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fdf8f6;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      text-align: right;
+    }
+
+    #checkout h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #881319;
+      font-size: 28px;
+    }
+
+    #checkout p {
+      text-align: center;
+      font-size: 16px;
+      color: #494e4d;
+      margin-bottom: 30px;
+    }
+
+    .checkout-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    #order-form {
+      flex: 1 1 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    #order-form label {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    #order-form input,
+    #order-form textarea,
+    #order-form select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      background-color: #fff;
+      text-align: right;
+      box-sizing: border-box;
+    }
+
+    #order-form button.normal {
+      background-color: #881319;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      width: 100%;
+    }
+
+    #order-form button.normal:hover {
+      background-color: #a72c2c;
+      transform: scale(1.03);
+    }
+
+    #order-summary {
+      flex: 1 1 280px;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      height: fit-content;
+    }
+
+    #order-summary h3 {
+      font-size: 22px;
+      color: #088178;
+      margin-bottom: 15px;
+    }
+
+    #order-summary p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    #order-summary span {
+      font-weight: bold;
+      color: #881319;
+    }
+  </style>
+</head>
+<body>
+
+<section id="checkout">
+  <h2>📦 تأكيد الطلب</h2>
+  <p>يرجى تعبئة البيانات لإتمام عملية الشراء</p>
+
+  <div class="checkout-wrapper">
+    <form id="order-form">
+      <label>الاسم الكامل</label>
+      <input type="text" placeholder="مثال: أحمد خالد" required>
+
+      <label>رقم الهاتف</label>
+      <input type="tel" placeholder="مثال: +963 9XXXXXXX" required>
+
+      <label>العنوان الكامل</label>
+      <textarea rows="3" placeholder="المدينة، الشارع، رقم البناء..." required></textarea>
+
+      <label>طريقة الدفع</label>
+      <select required>
+        <option value="">اختر طريقة الدفع</option>
+        <option value="cod">الدفع عند الاستلام</option>
+        <option value="whatsapp">الدفع عبر واتساب</option>
+      </select>
+
+      <button class="normal" type="submit">إرسال الطلب</button>
+    </form>
+
+    <div id="order-summary">
+      <h3>🛒 ملخص العربة</h3>
+      <p>عدد المنتجات: <span id="item-count">3</span></p>
+      <p>الإجمالي الكلي: <span id="order-total">$124.00</span></p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

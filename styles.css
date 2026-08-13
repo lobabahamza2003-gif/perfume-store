@@ -1343,4 +1343,939 @@ footer .copyright{
     width: 100%;
   }
 }
+/* =========================================
+   📱 RESPONSIVE DESIGN - MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* =========================
+     الإعدادات العامة
+  ========================= */
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .main {
+    padding: 25px 15px;
+  }
+
+  section {
+    margin-bottom: 25px;
+  }
+
+
+  /* =========================
+     HEADER
+  ========================= */
+
+  header {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo-area {
+    width: auto;
+  }
+
+  .logo {
+    width: 85px;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+
+  .search-container {
+    order: 2;
+    width: auto;
+  }
+
+  .search-container input {
+    width: 120px;
+    padding: 7px;
+  }
+
+  .search-container button {
+    padding: 7px 10px;
+  }
+
+  .icons {
+    gap: 5px;
+  }
+
+  .icons a {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+
+
+  /* =========================
+     HERO
+  ========================= */
+
+  #hero {
+    min-height: 650px;
+    height: auto;
+    padding: 60px 20px;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    background-position: center;
+  }
+
+  #hero h4 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  #hero h2 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  #hero p {
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 100%;
+  }
+
+  #hero button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero-badge {
+    top: 20px;
+    right: 20px;
+
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+
+  /* =========================
+     FEATURE BOXES
+  ========================= */
+
+  .main-feature {
+    padding: 40px 15px;
+  }
+
+  .fe-box {
+    display: block;
+
+    width: 100%;
+    max-width: 350px;
+
+    margin: 15px auto;
+  }
+
+
+  /* =========================
+     PRODUCT SECTION
+  ========================= */
+
+  #product1 {
+    padding: 30px 15px;
+  }
+
+  #product1 .pro-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    padding-top: 15px;
+  }
+
+  #product1 .pro {
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 15px;
+  }
+
+  #product1 .pro img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+
+  #product1 .pro .des {
+    padding: 8px 0;
+  }
+
+  #product1 .pro .des span {
+    font-size: 10px;
+  }
+
+  #product1 .pro .des h5 {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  #product1 .pro .star {
+    font-size: 15px;
+  }
+
+  #product1 .pro .des h4 {
+    font-size: 14px;
+  }
+
+
+  /* =========================
+     SECTION TITLE
+  ========================= */
+
+  .section-title {
+    margin-bottom: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 21px;
+  }
+
+  .badge {
+    top: -8px;
+    right: -45px;
+
+    font-size: 9px;
+    padding: 3px 8px;
+  }
+
+
+  /* =========================
+     BANNER
+  ========================= */
+
+  #banner {
+    height: 300px;
+
+    padding: 20px;
+
+    border-radius: 8px;
+  }
+
+  #banner h4 {
+    font-size: 15px;
+  }
+
+  #banner h2 {
+    font-size: 19px;
+
+    line-height: 1.6;
+  }
+
+  #banner button {
+    font-size: 14px;
+
+    padding: 9px 18px;
+  }
+
+
+  /* =========================
+     SMALL BANNERS
+  ========================= */
+
+  #sm-bannar {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px 15px;
+
+    gap: 15px;
+  }
+
+  #sm-bannar .banner-box,
+  #sm-bannar .banner-box2 {
+
+    width: 100%;
+
+    min-width: 0;
+
+    height: 300px;
+
+    padding: 20px;
+
+    align-items: flex-end;
+
+    border-radius: 10px;
+  }
+
+  #sm-bannar h4 {
+    font-size: 16px;
+  }
+
+  #sm-bannar h2 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  #sm-bannar span {
+    font-size: 12px;
+  }
+
+  #sm-bannar button {
+    font-size: 14px;
+
+    padding: 10px 18px;
+  }
+  /* =========================
+     NEWSLETTER
+  ========================= */
+
+  #newsletter {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 35px 15px;
+
+    text-align: center;
+  }
+
+  #newsletter .newstext {
+    width: 100%;
+
+    min-width: 0;
+
+    text-align: center;
+
+    direction: rtl;
+  }
+
+  #newsletter h4 {
+    font-size: 19px;
+  }
+
+  #newsletter p {
+    font-size: 13px;
+  }
+
+  #newsletter .form {
+    width: 100%;
+
+    min-width: 0;
+
+    margin-top: 20px;
+  }
+
+  #newsletter input {
+    min-width: 0;
+
+    height: 45px;
+  }
+
+  #newsletter button.normal {
+    padding: 0 15px;
+
+    font-size: 13px;
+  }
+
+
+  /* =========================
+     PAGE HEADER
+  ========================= */
+
+  #page-header {
+    height: 280px;
+  }
+
+  .header-text {
+    padding: 15px 20px;
+
+    width: 90%;
+  }
+
+  #page-header h2 {
+    font-size: 23px;
+  }
+
+  #page-header p {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  /* =========================
+     PRODUCT DETAILS
+  ========================= */
+
+  #prodetails {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px 15px;
+
+    margin-top: 0;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+
+    padding-top: 25px;
+  }
+
+  #prodetails .single-pro-details h4 {
+    padding: 20px 0 10px;
+  }
+
+  #prodetails .single-pro-details h2 {
+    font-size: 23px;
+  }
+
+  #prodetails .single-pro-details span {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+  .small-img-group {
+    gap: 8px;
+  }
+
+
+  /* =========================
+     CONTACT DETAILS
+  ========================= */
+
+  #contact-details {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px 15px;
+  }
+
+  #contact-details .details {
+    width: 100%;
+  }
+
+  #contact-details .details h2,
+  #form-details form h2 {
+    font-size: 22px;
+
+    line-height: 1.6;
+  }
+
+  #contact-details .map {
+    width: 100%;
+
+    height: 300px;
+
+    margin-top: 20px;
+  }
+
+
+  /* =========================
+     CONTACT FORM
+  ========================= */
+
+  #form-details {
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 20px 15px;
+
+    padding: 25px 15px;
+
+    gap: 30px;
+  }
+
+  #form-details form {
+    width: 100%;
+  }
+
+  #form-details .people {
+    width: 100%;
+  }
+
+  #form-details form input,
+  #form-details form textarea {
+    width: 100%;
+
+    font-size: 14px;
+  }
+
+  #form-details .people div {
+    width: 100%;
+  }
+
+
+  /* =========================
+     CART
+  ========================= */
+
+  #cart {
+    padding: 20px 15px;
+
+    overflow-x: auto;
+  }
+
+  #cart table {
+    min-width: 650px;
+
+    white-space: nowrap;
+  }
+
+  #cart table td {
+    padding: 10px;
+  }
+
+  #cart table img {
+    width: 55px;
+  }
+
+
+  /* =========================
+     CART SUMMARY
+  ========================= */
+
+  #cart-summary {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 25px 15px;
+
+    gap: 15px;
+  }
+
+  .coupon-box,
+  .total-box {
+    width: 100%;
+
+    padding: 20px;
+  }
+
+  .coupon-box input {
+    width: 60%;
+
+    margin-right: 5px;
+  }
+
+  .coupon-box button {
+    padding: 10px 12px;
+  }
+
+
+  /* =========================
+     CART ADD
+  ========================= */
+
+  #cart-add {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px 15px;
+  }
+
+  #coupon,
+  #Subtotal {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  #coupon input {
+    width: 60%;
+
+    margin-right: 5px;
+  }
+
+  #coupon button {
+    padding: 10px 12px;
+  }
+
+  #Subtotal {
+    padding: 20px;
+  }
+
+
+  /* =========================
+     CHECKOUT
+  ========================= */
+
+  #checkout {
+    width: calc(100% - 30px);
+
+    padding: 25px 15px;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+  }
+
+  #checkout h2 {
+    font-size: 23px;
+  }
+
+  #checkout input,
+  #checkout textarea,
+  #checkout select {
+    width: 100%;
+
+    font-size: 14px;
+  }
+
+
+  /* =========================
+     PAGINATION
+  ========================= */
+
+  #pagination {
+    padding: 20px 15px;
+  }
+
+  #pagination a {
+    padding: 10px 14px;
+
+    font-size: 13px;
+  }
+  /* =========================
+     CONTACT HEADER
+  ========================= */
+
+  .contact-header {
+    padding: 45px 15px;
+
+    border-radius: 8px;
+  }
+
+  .contact-header h2 {
+    font-size: 24px;
+  }
+
+
+  /* =========================
+     CART HEADER
+  ========================= */
+
+  .cart-header {
+    padding: 45px 15px;
+
+    border-radius: 8px;
+  }
+
+  .cart-header h2 {
+    font-size: 24px;
+  }
+
+
+  /* =========================
+     PAYMENT
+  ========================= */
+
+  .payment-methods {
+    padding: 15px;
+  }
+
+  .ai-chatbot {
+    padding: 15px;
+  }
+
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  footer {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 35px 20px;
+  }
+
+  footer .col {
+    width: 100%;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+  }
+
+  footer .logo {
+    width: 100px;
+
+    margin-bottom: 20px;
+  }
+
+  footer h4 {
+    font-size: 15px;
+
+    padding-bottom: 12px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 13px;
+  }
+
+  footer .follow {
+    margin-top: 10px;
+  }
+
+  footer .copyright {
+    width: 100%;
+
+    font-size: 12px;
+  }
+
+
+  /* =========================
+     BUTTONS
+  ========================= */
+
+  button.normal {
+    padding: 11px 20px;
+
+    font-size: 13px;
+  }
+
+  button.white {
+    padding: 9px 14px;
+
+    font-size: 12px;
+  }
+
+  #apply-discount {
+    padding: 9px 18px !important;
+
+    font-size: 13px !important;
+  }
+
+  #checkout-btn {
+    width: 100%;
+
+    padding: 12px 20px !important;
+
+    font-size: 14px !important;
+  }
+
+}
+
+
+/* =========================================
+   📱 موبايلات صغيرة جداً
+   أقل من 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+  /* HEADER */
+
+  header {
+    padding: 8px 10px;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  nav ul li {
+    margin: 0 3px;
+  }
+
+  nav ul li a {
+    font-size: 11px;
+  }
+
+  .search-container input {
+    width: 100px;
+
+    font-size: 11px;
+  }
+
+
+  /* HERO */
+
+  #hero {
+    min-height: 600px;
+
+    padding: 50px 15px;
+  }
+
+  #hero h4 {
+    font-size: 14px;
+  }
+
+  #hero h2 {
+    font-size: 22px;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 13px;
+  }
+
+
+  /* PRODUCTS */
+
+  #product1 .pro-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 8px;
+  }
+
+  #product1 .pro {
+    padding: 7px;
+  }
+
+  #product1 .pro img {
+    height: 145px;
+  }
+
+  #product1 .pro .des h5 {
+    font-size: 12px;
+  }
+
+  #product1 .pro .des h4 {
+    font-size: 13px;
+  }
+
+  #product1 .pro .star {
+    font-size: 13px;
+  }
+
+
+  /* SMALL BANNERS */
+
+  #sm-bannar .banner-box,
+  #sm-bannar .banner-box2 {
+    height: 250px;
+
+    padding: 15px;
+  }
+
+
+  /* NEWSLETTER */
+
+  #newsletter .form {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  #newsletter input {
+    width: 100%;
+
+    border-radius: 5px;
+  }
+
+  #newsletter button.normal {
+    width: 100%;
+
+    height: 45px;
+
+    border-radius: 5px;
+  }
+
+
+  /* CART */
+
+  #cart table {
+    min-width: 600px;
+  }
+
+
+  /* COUPON */
+
+  #coupon input {
+    width: 100%;
+
+    margin: 0 0 10px 0;
+  }
+
+  #coupon button {
+    width: 100%;
+  }
+
+
+  /* CONTACT */
+
+  #contact-details .details h2,
+  #form-details form h2 {
+    font-size: 20px;
+  }
+
+  #contact-details .map {
+    height: 250px;
+  }
+
+
+  /* CHECKOUT */
+
+  #checkout {
+    width: calc(100% - 20px);
+
+    padding: 20px 12px;
+  }
+
+
+  /* BADGE */
+
+  .badge {
+    right: -35px;
+
+    font-size: 8px;
+  }
+
+}
 
